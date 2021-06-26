@@ -3,13 +3,6 @@ import { useTable, usePagination, useExpanded, useSortBy } from "react-table";
 import ClockLoader from "react-spinners/ClockLoader";
 import { css } from "@emotion/react";
 import {
-  Styles,
-  Table,
-  TableHead,
-  TableBody,
-  TableRow,
-  TableHeader,
-  TableData,
   Pagination,
   PagincationButtonContainer,
   PaginationButton,
@@ -35,7 +28,6 @@ const TableComponent = ({
   isPaginated = true,
   ...props
 }) => {
-  let [color, setColor] = useState("#ffffff");
   const defaultColumn = useMemo(
     () => ({
       // minWidth: 20,
